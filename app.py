@@ -8,7 +8,7 @@ UPLOAD_FOLDER = os.path.join('static', 'uploads')
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
-DB = 'nextstep.db'
+DB = '/tmp/nextstep.db'
 
 def get_db():
     conn = sqlite3.connect(DB)
